@@ -24,118 +24,134 @@
       <!-- Contacto -->
       <div class="container">
         <div class="row">
-            <div class="col-6 mb-2 m-0 p-0">
-              <h2 class="">Contacto</h2>
-              <form class="g-3 needs-validation"
-              method="POST" id="formulario" novalidate autocomplete="off">
-                      <!-- Nombre -->
-                      <div class="form-floating mb-3">
-                          <input
-                          type="text"
-                          name="nombre"
-                          class="form-control"
-                          id="nombre"
-                          placeholder="Nombre Apellido"
-                          required
-                          />
-      
-                          <label for="floatingInput validationCustom01" class="form-label"
-                          >Nombre</label
-                          >
-      
-                          <div class="invalid-feedback">El campo nombre es requerido.</div>
-                          <!-- <div class="valid-feedback">Looks good!</div> -->
-                      </div>
-      
-                      <!-- correo Electronico -->
-                      <div class="form-floating mb-3">
-                          <input
-                          type="email"
-                          name="correo"
-                          class="form-control"
-                          id="correo"
-                          placeholder="name@example.com"
-                          required
-                          />
-                          <!-- for="validationCustom para que se valide automaticamente con bootstrap" -->
-                          <label for="floatingInput validationCustom02" class="form-label"
-                          >Correo Electronico</label
-                          >
-      
-                          <!-- validacion -->
-                          <div class="invalid-feedback">Introduce un email valido.</div>
-                      </div>
-      
-                      <!-- Numero de telefono -->
-                      <div class="form-floating mb-3">
-                          <input
-                          type="text"
-                          name="phone"
-                          class="form-control"
-                          id="phone"
-                          placeholder="name@example.com"
-                          required
-                          />
-      
-                          <label for="floatingInput validationCustom03" class="form-label"
-                          >Numero de Telefono</label
-                          >
-                          <!-- validacion -->
-                          <div class="invalid-feedback">Introduce un numero de contacto.</div>
-                      </div>
+          <div class="col-6 mb-2 m-0 p-0">
+            <h2 class="">Contacto</h2>
+            <form
+              class="g-3 needs-validation"
+              method="POST"
+              id="formulario"
+              novalidate
+              autocomplete="off"
+            >
+              <!-- Nombre -->
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  name="nombre"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Nombre Apellido"
+                  required
+                />
 
-                      <!-- Tipo de Consulta -->
-                      
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected>Selecciona tu región</option>
-                        <option value="1">Tarapacá</option>
-                        <option value="2">Antofagasta</option>
-                        <option value="3">Atacama</option>
-                        <option value="4">Coquimbo</option>
-                        <option value="5">Valparaíso</option>
-                        <option value="6">O'Higgins</option>
-                        <option value="7">Maule</option>
-                        <option value="8">Biobío</option>
-                        <option value="9">La Araucanía</option>
-                        <option value="10">Los Lagos</option>
-                        <!-- <option value="11">Región Aysén</option>
+                <label for="nombre" class="form-label">Nombre</label>
+
+                <div class="invalid-feedback">
+                  El campo nombre es requerido.
+                </div>
+                <!-- <div class="valid-feedback">Looks good!</div> -->
+              </div>
+
+              <!-- correo Electronico -->
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  name="correo"
+                  class="form-control"
+                  id="correo"
+                  placeholder="name@example.com"
+                  required
+                />
+                <!-- for="validationCustom para que se valide automaticamente con bootstrap" -->
+                <label for="correo" class="form-label"
+                  >Correo Electronico</label
+                >
+
+                <!-- validacion -->
+                <div class="invalid-feedback">Introduce un email valido.</div>
+              </div>
+
+              <!-- Numero de telefono -->
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control"
+                  id="phone"
+                  placeholder="name@example.com"
+                  required
+                />
+
+                <label for="phone" class="form-label"
+                  >Numero de Telefono</label
+                >
+                <!-- validacion -->
+                <div class="invalid-feedback">
+                  Introduce un numero de contacto.
+                </div>
+              </div>
+
+              <!-- Tipo de Consulta -->
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Selecciona tu región</option>
+                <option value="1">Tarapacá</option>
+                <option value="2">Antofagasta</option>
+                <option value="3">Atacama</option>
+                <option value="4">Coquimbo</option>
+                <option value="5">Valparaíso</option>
+                <option value="6">O'Higgins</option>
+                <option value="7">Maule</option>
+                <option value="8">Biobío</option>
+                <option value="9">La Araucanía</option>
+                <option value="10">Los Lagos</option>
+                <!-- <option value="11">Región Aysén</option>
                         <option value="12">Magallanes y Antártica Chilena</option>
                         <option value="13">Metropolitana de Santiago</option>
                         <option value="14">Los Ríos</option>
                         <option value="15">Región de Arica y Parinacota</option>
                         <option value="16">Región de Ñuble</option> -->
-                      </select>
+              </select>
 
-                      <!-- Area de texto -->
-                      <div class="form-floating mt-3 mb-3">
-                          <textarea
-                          class="form-control"
-                          name="message"
-                          id="message"
-                          rows="3"
-                          placeholder=" "
-                          required
-                          style="height: 10rem"
-                          ></textarea>
-      
-                          <label for="floatingInput validationCustom04" class="form-label"
-                          >Mensaje</label
-                          >
-                          <!-- validacion -->
-                          <div class="invalid-feedback">El mensaje es requerido.</div>
-                      </div>
-      
-                      <!-- boton enviar -->
-                          <div class="col-6 mt-0 text-center">
-                              <button class="btn btn-primary" id="submitButton" type="button">
-                              Enviar
-                              </button>
-                          </div>
-                  </div>
-              </form>
+              <!-- Area de texto -->
+              <div class="form-floating mt-3 mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  rows="3"
+                  placeholder=" "
+                  required
+                  style="height: 10rem"
+                ></textarea>
+
+                <label for="message" class="form-label">Mensaje</label>
+                <!-- validacion -->
+                <div class="invalid-feedback">El mensaje es requerido.</div>
+              </div>
+
+              <!-- boton enviar -->
+              <div class="col-6 mt-0 text-center">
+                <button class="btn btn-primary" id="submitButton" type="button">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
           <div class="col-6 text-center m-0 p-0">
             <h2 class="text-center">Ubicación</h2>
-            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-70.60232877731325%2C-33.521942883179804%2C-70.59753298759462%2C-33.51897777841776&amp;layer=mapnik&amp;marker=-33.5204626120263%2C-70.59993059432895" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=-33.52046&amp;mlon=-70.59993#map=18/-33.52046/-70.59993&amp;layers=N">Ver mapa más grande</a></small>
+            <iframe
+              width="425"
+              height="350"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-70.60232877731325%2C-33.521942883179804%2C-70.59753298759462%2C-33.51897777841776&amp;layer=mapnik&amp;marker=-33.5204626120263%2C-70.59993059432895"
+              style="border: 1px solid black"
+            ></iframe
+            ><br /><small
+              ><a
+                href="https://www.openstreetmap.org/?mlat=-33.52046&amp;mlon=-70.59993#map=18/-33.52046/-70.59993&amp;layers=N"
+                >Ver mapa más grande</a
+              ></small
+            >
           </div>
         </div>
       </div>
