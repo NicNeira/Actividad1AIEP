@@ -25,28 +25,27 @@
     <section class="container-fluid bannerContainer">
         <div class="row h-100 justify-content-center p-5">
           <div class="col-md-6 bannerText text-white text-center h-80 p-5 m-0">
-            <h1>Estampados en Serigrafía</h1>
-            <p>
+            <h1 class="h1-text">Estampados en Serigrafía</h1>
+            <p class="p-text">
               Desarrolla tus proyectos junto a unos profesionales en la
               impresión de poleras, bolsas reutilizables y vasos de cristal.
             </p>
 
-            <p>
+            <p class="p-text">
               Serigrafía Chile cuenta con mas de 8 años de experiencia en el
               rubro de los estampados.
             </p>
 
-            <button class="btn btn-primary">Contactanos</button>
+            <button class="btn btn-primary" id="btn-header-contacto" onclick="location.href='contacto.html'">Contactanos</button>
           </div>
         </div>
     </section>
     <!-- Carrousel -->
-    <section class="container p-0">
-        <h2 class="text-center">Carrousel</h2>
+    <section class="container-fluid p-0 mb-3 carrousel">
         <div
           id="carouselExampleCaptions"
           class="carousel slide"
-          data-bs-ride="false"
+          data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
             <button
@@ -71,43 +70,35 @@
             ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="">
               <img
                 src="/Actividad1AIEP/assets/img/carrouselGames.jpg"
                 class="d-block w-100 carrousel-h"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
+              <div class="carousel-caption carrouselTextContainer ">
+                <h5 class="h5-text">Diseños de tus juegos favoritos!</h5>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="">
               <img
                 src="/Actividad1AIEP/assets/img/carrouselOnePiece.jpg"
                 class="d-block w-100 carrousel-h"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
+              <div class="carousel-caption carrouselTextContainer">
+                <h5 class="h5-text">Tus Animes Preferidos!</h5>
+                
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="">
               <img
                 src="/Actividad1AIEP/assets/img/waveBanner2.jpg"
                 class="d-block w-100 carrousel-h"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
+              <div class="carousel-caption carrouselTextContainer">
+                <h5 class="h5-text">Los mejores estilos!</h5>
               </div>
             </div>
           </div>
@@ -132,19 +123,18 @@
         </div>
     </section>
     <!-- seccion Video -->
-    <section class="container">
-        <h1 class="text-center">El mejor lugar para diseñar tus poleras</h1>
+    <section class="container pb-3">
+        <h1 class="text-center h1-text mb-3">¡ El mejor lugar para diseñar tus poleras !</h1>
         <div class="row">
-            <div class="col-6">
-                <video class="videoOptions"  controls>
-                    <source src="/Actividad1AIEP/assets/video/videoSerigrafia.mp4" type="video/mp4">
-                </video>
+            <div class="col-8 col-sm-6 align-self-center carrouselTextContainer">
+                    <h2 class="h1-text text-center">¿Como lo hacemos?</h2>
+                    <p class="p-text text-center">La serigrafía es una de las técnicas de personalización más populares para plasmar imágenes o textos sobre cualquier material. Se puede definir como un método mediante el cual se transfieren imágenes trazadas en una plantilla sobre una malla con tinta a una superficie.</p>
             </div>
-            <div class="col-6 align-self-center">
-                    <h2 class="text-center">Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta aspernatur at exercitationem laborum nobis tenetur, debitis cum nostrum dolorem perspiciatis necessitatibus minima, quae doloremque similique! Fugit iusto cum quisquam.</p>
-                
-            </div>
+            <div class="col-12 col-sm-6 align-self-center">
+              <video class="videoOptions"  controls>
+                  <source src="/Actividad1AIEP/assets/video/videoSerigrafia.mp4" type="video/mp4">
+              </video>
+          </div>
         </div>
     </section>
     </main>

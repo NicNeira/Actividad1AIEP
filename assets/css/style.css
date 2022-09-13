@@ -1,19 +1,26 @@
+/* CSS GENERAL */
+/* Importacion de GoogleFonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Rubik:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif; */
+
 *{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
-.bannerContainer{
-    background-image: url(/Actividad1AIEP/assets/img/bannerPoleras.jpg);
-    width: 100%;
-    
+body{
+    background-color: #03588C;
 }
 
-.bannerText{
-    background: rgba(0, 0, 0, 0.6);
-}
 
+
+main {
+    background-color: #03588C;
+}
 
 .h-100{
     height: 100%;
@@ -23,22 +30,285 @@
     height: 80%;
 }
 
+.h1-text{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: #F2F2F2;
+    text-shadow: 2px 2px #000;
+}
+
+.h5-text{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: #F2F2F2;
+    text-shadow: 2px 2px #000;
+}
+
+.p-text{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F2F2F2;
+}
+
+.margin-top{
+    margin-top: 62px;
+}
+
+/* CSS NavBar */
+.navLogo{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: #F2F2F2;
+    text-shadow: 2px 2px #000;
+}
+
+.navLogo:hover{
+    color: #F2F2F2;
+}
+
+.navColor{
+    background-color: #03588C;
+    height: 62px;
+}
+
+#navText{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: #F2F2F2;
+    text-shadow: 2px 2px #000;
+}
+
+#navText:hover{
+    color: #BF1B57;
+}
+
+.containerResponsiveMenu{
+    background: rgba(3, 88, 140, 0.9);
+}
+
+/* CSS Body Main */
+    /* CSS Hero-Main */
+.bannerContainer{
+    background-image: url(/Actividad1AIEP/assets/img/bannerPoleras.jpg);
+    width: 100%;
+    margin-top: 62px;
+    
+}
+
+.bannerText{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 24px;
+}
+
+    /* CSS Carrousel */
 .carrousel-h{
-    max-height: 400px;
+    height: 400px;
     max-width: 100%;
 }
 
+.carrouselTextContainer{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 24px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+    .carrousel-h{
+        height: 200px;
+    }
+}
+
+/* CSS Productos */
 .cardImgSize{
     height: 400px;
     width: 100%;
+}
+
+.poleras{
+    margin-top: 62px;
+    ;
+}
+
+.tabla{
+    width: 50%;
+}
+
+/* @media (max-width: 600px) {
+    .auto-gap{
+        display: flex;
+        gap: 8px;
+    }
+} */
+
+
+/* CSS Seccion Video */
+.videoOptions{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+/* CSS PaginaContacto */
+#btn-header-contacto{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F2F2F2;
+    background-color:#03588C ;
+}
+
+#btn-header-contacto:hover{
+    color: #BF1B57;
+    text-shadow: 2px 2px #000;
+}
+
+/* CSS FOOTER */
+footer{
+    background-color: #03588C;
 }
 
 .footer-item{
     margin: 0;
 }
 
-.videoOptions{
-    width: 100%;
-    height: 100%;
+#footerNavText{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #F2F2F2;
+    text-shadow: 2px 2px #000;
 }
 
+#footerNavText:hover{
+    color: #BF1B57;
+}
+
+
+/* Contacto */
+.contactoContainer{
+    margin-top: 62px;
+}
+
+.map{
+    display: flex;
+    height: 335px;
+    width: 80%;
+    /* margin-top: 10%; */
+}
+
+.link-map{
+    display: flex;
+    justify-content: center;
+    color: #F2F2F2;
+}
+
+.link-map:hover{
+    color: #BF1B57;
+}
+
+.mi-form-control i {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    /* visibility: hidden; */
+}
+
+.mi-form-control.success input{
+    border: 2px solid #2ecc71;
+    
+} */
+
+.mi-form-control.success i{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.mi-form-control small{
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+}
+
+.mi-form-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.mi-form-control.error input{
+    border: 2px solid #e74c3c;
+}
+
+.mi-form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.textLabel{
+    color: #F2F2F2;
+}
+
+    /* Mapa Contacto */
+.mapOptions{
+    width: 100%;
+    height: 300px;
+}
+
+.contactImg{
+    margin-top: 3rem;
+    width: 100%;
+    /* height: 200px; */
+    
+}
+
+/* Pagina Sobre nosotros */
+.containerAbout{
+    margin-top: 62px;
+}
+
+.aboutCard{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 14px;
+}
+
+.aboutImg{
+    width: 100%;
+
+}
+
+@media (max-width: 500px) {
+    .aboutIMg{
+        height: 250px;
+    }
+}
+
+
+/* CSS Preguntas Frecuentes */
+.preguntas{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #F2F2F2;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.respuesta{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F2F2F2;
+    text-align: center;
+}

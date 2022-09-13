@@ -12,7 +12,12 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/ba6eadaaa2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
     <!-- Header con NavBar -->
     <header>
@@ -22,137 +27,158 @@
     <!-- Secciones de la pagina -->
     <main>
       <!-- Contacto -->
-      <div class="container">
-        <div class="row">
-          <div class="col-6 mb-2 m-0 p-0">
-            <h2 class="">Contacto</h2>
+      <div class="container contactoContainer">
+        <div class="row m-0 p-0">
+          <div class="col-10 col-md-6">
+            <h2 class="text-center h1-text">Contacto</h2>
+
             <form
-              class="g-3 needs-validation"
-              method="POST"
-              id="formulario"
+              id="form"
+              action="#"
+              method="get"
+              class="row g-3 needs-validation justify-content-center"
               novalidate
-              autocomplete="off"
             >
-              <!-- Nombre -->
-              <div class="form-floating mb-3">
+              <div class="col-10">
+                <label for="nombre" class="form-label textLabel">Nombre</label>
                 <input
-                  type="text"
-                  name="nombre"
-                  class="form-control"
                   id="nombre"
-                  placeholder="Nombre Apellido"
-                  required
-                />
-
-                <label for="nombre" class="form-label">Nombre</label>
-
-                <div class="invalid-feedback">
-                  El campo nombre es requerido.
-                </div>
-                <!-- <div class="valid-feedback">Looks good!</div> -->
-              </div>
-
-              <!-- correo Electronico -->
-              <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  name="correo"
-                  class="form-control"
-                  id="correo"
-                  placeholder="name@example.com"
-                  required
-                />
-                <!-- for="validationCustom para que se valide automaticamente con bootstrap" -->
-                <label for="correo" class="form-label"
-                  >Correo Electronico</label
-                >
-
-                <!-- validacion -->
-                <div class="invalid-feedback">Introduce un email valido.</div>
-              </div>
-
-              <!-- Numero de telefono -->
-              <div class="form-floating mb-3">
-                <input
+                  name="nombre"
                   type="text"
-                  name="phone"
                   class="form-control"
-                  id="phone"
-                  placeholder="name@example.com"
                   required
                 />
-
-                <label for="phone" class="form-label"
-                  >Numero de Telefono</label
+                <div class="valid-feedback">Campo Ok</div>
+                <div class="invalid-feedback">Complete los datos</div>
+              </div>
+              <div class="col-10">
+                <label for="phone" class="form-label textLabel">Telefono</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+                <div class="valid-feedback">Campo Ok</div>
+                <div class="invalid-feedback">Complete los datos</div>
+              </div>
+              <div class="col-10">
+                <label for="email" class="form-label textLabel"
+                  >Correo electronico</label
                 >
-                <!-- validacion -->
-                <div class="invalid-feedback">
-                  Introduce un numero de contacto.
-                </div>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  required
+                />
+                <div class="valid-feedback">Campo Ok</div>
+                <div class="invalid-feedback">Complete los datos</div>
+              </div>
+              <div class="col-10">
+                <label for="region" class="form-label textLabel">Region</label>
+                <select name="region" id="region" class="form-select" required>
+                  <option selected disabled value="">Seleccione...</option>
+                  <option value="Arica">Arica y Parinacota</option>
+                  <option value="Tarapacá">Tarapacá</option>
+                  <option value="Antofagasta">Antofagasta</option>
+                  <option value="Atacama">Atacama</option>
+                  <option value="Coquimbo">Coquimbo</option>
+                  <option value="Valparaíso">Valparaíso</option>
+                  <option value="RM">Metropolitana</option>
+                  <option value="O'higgins">O'higgins</option>
+                  <option value="Maule">Maule</option>
+                  <option value="BioBío">BioBío</option>
+                  <option value="Araucanía">Araucanía</option>
+                  <option value="Los Ríos">Los Ríos</option>
+                  <option value="Los Lagos">Los Lagos</option>
+                  <option value="Aysén">Aysén</option>
+                  <option value="Magallanes">Magallanes</option>
+                </select>
+                <div class="valid-feedback">Campo Ok</div>
+                <div class="invalid-feedback">Complete los datos</div>
               </div>
 
-              <!-- Tipo de Consulta -->
+              <div class="col-10">
+                <p class="textLabel">Interes en :</p>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="checkOption"
+                    name="radio-stacked"
+                    value="poleras"
+                    required
+                  />
+                  <label
+                    class="form-check-label textLabel"
+                    for="checkOption"
+                    >Poleras</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="checkOption2"
+                    name="radio-stacked"
+                    value="estampados"
+                    required
+                  />
+                  <label class="form-check-label textLabel" for="checkOption2"
+                    >Estampados</label
+                  >
 
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Selecciona tu región</option>
-                <option value="1">Tarapacá</option>
-                <option value="2">Antofagasta</option>
-                <option value="3">Atacama</option>
-                <option value="4">Coquimbo</option>
-                <option value="5">Valparaíso</option>
-                <option value="6">O'Higgins</option>
-                <option value="7">Maule</option>
-                <option value="8">Biobío</option>
-                <option value="9">La Araucanía</option>
-                <option value="10">Los Lagos</option>
-                <!-- <option value="11">Región Aysén</option>
-                        <option value="12">Magallanes y Antártica Chilena</option>
-                        <option value="13">Metropolitana de Santiago</option>
-                        <option value="14">Los Ríos</option>
-                        <option value="15">Región de Arica y Parinacota</option>
-                        <option value="16">Región de Ñuble</option> -->
-              </select>
-
-              <!-- Area de texto -->
-              <div class="form-floating mt-3 mb-3">
+                  <div class="invalid-feedback">
+                    More example invalid feedback text
+                  </div>
+                </div>
+              </div>
+              <div class="col-10">
+                <label for="message" class="form-label textLabel"
+                  >Mensaje</label
+                >
                 <textarea
                   class="form-control"
                   name="message"
                   id="message"
-                  rows="3"
-                  placeholder=" "
+                  rows="10"
+                  placeholder="Tu mensaje aqui"
                   required
-                  style="height: 10rem"
                 ></textarea>
-
-                <label for="message" class="form-label">Mensaje</label>
-                <!-- validacion -->
-                <div class="invalid-feedback">El mensaje es requerido.</div>
               </div>
-
-              <!-- boton enviar -->
-              <div class="col-6 mt-0 text-center">
-                <button class="btn btn-primary" id="submitButton" type="button">
-                  Enviar
-                </button>
-              </div>
-            </form>
+              <div class="valid-feedback">Campo Ok</div>
+              <div class="invalid-feedback"></div>
+              <button
+                type="button"
+                class="btn btn-info fw-bold col-4"
+                id="btn-contacto"
+              >
+                Enviar
+              </button>
+              <div id="prueba"></div>
+            </form> 
           </div>
-          <div class="col-6 text-center m-0 p-0">
-            <h2 class="text-center">Ubicación</h2>
+          <!-- Mapa -->
+          <div class="col-10 col-md-6 text-center">
+            <h2 class="text-center h1-text mb-4">Ubicación</h2>
             <iframe
-              width="425"
-              height="350"
+              class="mapOptions"
               src="https://www.openstreetmap.org/export/embed.html?bbox=-70.60232877731325%2C-33.521942883179804%2C-70.59753298759462%2C-33.51897777841776&amp;layer=mapnik&amp;marker=-33.5204626120263%2C-70.59993059432895"
               style="border: 1px solid black"
             ></iframe
             ><br /><small
               ><a
+                class="text-white"
                 href="https://www.openstreetmap.org/?mlat=-33.52046&amp;mlon=-70.59993#map=18/-33.52046/-70.59993&amp;layers=N"
                 >Ver mapa más grande</a
               ></small
             >
+            <img class="contactImg" src="/Actividad1AIEP/assets/img/contact.svg" alt="contactImg">
           </div>
+
         </div>
       </div>
     </main>
